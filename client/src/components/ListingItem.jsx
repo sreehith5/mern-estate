@@ -4,9 +4,9 @@ import {MdLocationOn} from 'react-icons/md';
 
 export default function ListingItem({listing}) {
   return (
-    <div className='bg-white shadow-md gap-4 hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]'>
+    <div className='bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]'>
       <Link to={`/listing/${listing._id}`}>
-        <img src={listing.imageUrls[0] || 'https://www.google.com/imgres?q=realestate&imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Flogo-real-estate-with-house-words-real-estate_885060-127.jpg&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Flogo-real-estate-with-house-words-real-estate_40695178.htm&docid=OdYKafteKKfhRM&tbnid=FS-kWeywNS1p6M&vet=12ahUKEwjf16Ghj7GHAxW9yzgGHTDJBFkQM3oECBwQAA..i&w=626&h=626&hcb=2&ved=2ahUKEwjf16Ghj7GHAxW9yzgGHTDJBFkQM3oECBwQAA'} alt='listing cover' className='h-[320px] sm:h-[220px] w-full object-cover hover:scale-105 transition-scale duration-1000'></img>
+        <img src={listing.imageUrls[0] || 'https://www.google.com/imgres?q=realestate&imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Flogo-real-estate-with-house-words-real-estate_885060-127.jpg&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Flogo-real-estate-with-house-words-real-estate_40695178.htm&docid=OdYKafteKKfhRM&tbnid=FS-kWeywNS1p6M&vet=12ahUKEwjf16Ghj7GHAxW9yzgGHTDJBFkQM3oECBwQAA..i&w=626&h=626&hcb=2&ved=2ahUKEwjf16Ghj7GHAxW9yzgGHTDJBFkQM3oECBwQAA'} alt='listing cover' className='h-[320px] sm:h-[220px] w-full object-cover hover:scale-105 transition-scale duration-300'></img>
         <div className='p-3 flex flex-col gap-2 w-full'>
             <p className='text-lg font-semibold text-slate-700 truncate'>{listing.name}</p>
             <div className='flex items-center gap-1'>
